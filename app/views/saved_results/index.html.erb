@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Saved Results</h1>
+
+<table>
+  <thead>
+    <tr>
+        <% @saved_result_json.each do |id, answer| %>
+          <%=  "#{id}" %>
+          <%=  answer %>
+          <br>
+        <% end %>
+        <% @saved_result_json_o.each do |id, answer| %>
+          <%=  "#{id}" %>
+          <%=  answer %>
+          <br>
+        <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Saved result', new_saved_result_path %>

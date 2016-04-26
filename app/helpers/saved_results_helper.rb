@@ -1,0 +1,2 @@
+module SavedResultsHelper
+end

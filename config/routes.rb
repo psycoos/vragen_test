@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :saved_results
   resources :answers
   resources :questions
   # The priority is based upon order of creation: first created -> highest priority.
